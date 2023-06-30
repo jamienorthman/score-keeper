@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.score-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: auto;
+    width: 575px;
+    height: 385px;
+    background-color: #1B244A;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.home, .guest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#home-title, #guest-title {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+#home-score, #guest-score {
+    width: 155px;
+    height: 120px;
+    background-color: black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #F94F6D;
+    font-size: 90px;
+    text-align: center;
+    font-family: Cursed Timer ULiL;
+}
+
+#plus-one, #plus-two, #plus-three {
+    border: 1px solid #9AABD8;
+    border-radius: 5px;
+    background-color: #1B244A;
+    color: #9AABD8;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-family: Cursed Timer ULiL;
+    margin-top: 10px;
+    margin-right: 5px;
+    padding: 10px;
+}
