@@ -4,6 +4,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1628968434441-d9c1c66dcde7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
+    background-size: cover;
 }
 
 .score-container {
@@ -13,9 +15,10 @@ body {
     margin: auto;
     width: 575px;
     height: 385px;
-    background-color: #1B244A;
+    background-color: rgb(255, 98, 0);
     box-sizing: border-box;
     border-radius: 10px;
+    border: 3px solid green;
 }
 
 .home, .guest {
@@ -27,11 +30,12 @@ body {
 }
 
 #home-title, #guest-title {
-    color: white;
+    color: yellow;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
+    margin-bottom: 20px;
 }
 
 #home-score, #guest-score {
@@ -40,22 +44,37 @@ body {
     background-color: black;
     border-radius: 5px;
     margin-bottom: 10px;
-    color: #F94F6D;
+    color: green;
     font-size: 90px;
     text-align: center;
-    font-family: Cursed Timer ULiL;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#plus-one, #plus-two, #plus-three {
-    border: 1px solid #9AABD8;
+#home-one, #home-two, #home-three, 
+#guest-one, #guest-two, #guest-three {
+    border: 1px solid yellow;
     border-radius: 5px;
-    background-color: #1B244A;
-    color: #9AABD8;
-    width: 30px;
-    height: 30px;
+    background-color: rgb(255, 98, 0);
+    color: yellow;
+    width: 40px;
+    height: 40px;
     text-align: center;
-    font-family: Cursed Timer ULiL;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 10px;
     margin-right: 5px;
     padding: 10px;
+}
+
+#home-rematch, #guest-rematch {
+    border: 1px solid yellow;
+    border-radius: 5px;
+    background-color: rgb(255, 98, 0);
+    color: yellow;
+    margin-top: 20px;
+    padding: 5px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button:hover {
+    cursor: pointer;
 }

@@ -12,22 +12,24 @@
     <body>
        <div class="score-container">
             <div class="home">
-                <h2 id="home-title">HOME</h2>
-                <div id="home-score">10</div>
+                <h3 id="home-title">TRAINER 1</h3>
+                <div id="home-score"></div>
                 <div id="incrementors">
-                    <button id="plus-one">+1</button>
-                    <button id="plus-two">+2</button>
-                    <button id="plus-three">+3</button>
+                    <button id="home-one" onclick="addScore('home', 1)">+1</button>
+                    <button id="home-two" onclick="addScore('home', 2)">+2</button>
+                    <button id="home-three" onclick="addScore('home', 3)">+3</button>
                 </div>
+                <button id="home-rematch" onclick="resetGame()">REMATCH</button>
             </div>
             <div class="guest">
-                <h2 id="guest-title">GUEST</h2>
-                <div id="guest-score">18</div>
+                <h3 id="guest-title">TRAINER 2</h3>
+                <div id="guest-score"></div>
                 <div id="incrementors">
-                    <button id="plus-one">+1</button>
-                    <button id="plus-two">+2</button>
-                    <button id="plus-three">+3</button>
+                    <button id="guest-one" onclick="addScore('guest', 1)">+1</button>
+                    <button id="guest-two" onclick="addScore('guest', 2)">+2</button>
+                    <button id="guest-three" onclick="addScore('guest', 3)">+3</button>
                 </div>
+                <button id="guest-rematch" onclick="resetGame()">REMATCH</button>
             </div>
         </div>
         
