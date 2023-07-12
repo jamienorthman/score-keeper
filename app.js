@@ -1,13 +1,14 @@
-// Desired output: numbers show up in red (score)
+// Desired output: numbers show up in green (score)
 // based on which increment button is clicked (+1, +2, or +3)
 // Necessary steps to achieve desired output:
 // - When the user clicks an increment button,
-// increase score amount by that increment and display
-// it.
+// increase score amount by that number and display
+// updated score.
 // - When a score reaches 30, that side (HOME or GUEST)
 // is declared and is displayed as winner.
-// - When the "New Game" button is clicked, scores
+// - When the "Rematch" button is clicked, scores
 // are reset to 0 and displayed as 0.
+//const baseURL = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" //deleting the end ".png" because that defines individual images
 const homeTitle = document.getElementById("home-title")
 const guestTitle = document.getElementById("guest-title")
 const homeDisplay = document.getElementById("home-score")
@@ -23,6 +24,17 @@ let guestScore = 0
 homeDisplay.textContent = 0
 guestDisplay.textContent = 0
 
+//function generatePokemon() {
+    //const stageEl = getElementById("stage-el")
+    //const pokemonImg1 = document.createElement("img");
+    //pokemonImg1.src = Math.floor(Math.random() * baseURL.png)
+    //const pokemonImg2 = document.createElement("img");
+    //pokemonImg2.src = Math.floor(Math.random() * baseURL.png)
+    //console.log(pokemonImg1, pokemonImg2)
+    //stageEl.appendChild(pokemonImg1, pokemonImg2)
+//}
+
+//generatePokemon()
 
 // This function is a procedure, it does something but does not
 // return a value

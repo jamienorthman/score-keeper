@@ -1,7 +1,7 @@
 body {
     margin: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     height: 100vh;
     background-image: url("https://images.unsplash.com/photo-1628968434441-d9c1c66dcde7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
@@ -77,4 +77,42 @@ body {
 
 button:hover {
     cursor: pointer;
+}
+
+.music {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: yellow;
+    background-color: rgb(255, 98, 0);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.caption {
+    margin-bottom: 20px;
+}
+
+/*#stage-el {
+    background-color: green;
+    padding: 20px;
+}*/
+
+@media only screen and (max-width: 1000px) {
+    .score-container {
+        width: 450px;
+        height: 820px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 30px;
+    }
+
+    .home, .guest {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #home-title, #guest-title {
+        margin-top: 10px;
+    }
 }
